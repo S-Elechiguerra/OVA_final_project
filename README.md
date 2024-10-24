@@ -15,7 +15,8 @@ Innovation: Advances in technology, such as AI and machine learning, are revolut
 # Overview
 This project combines machine learning and artificial intelligence to assist oncologists in predicting breast cancer and providing personalized patient recommendations. The core component is a predictive model that analyzes patient data to forecast the likelihood of breast cancer. Complementing this model is a chatbot, which facilitates smooth communication between oncologists and their patients, offering guidance and tailored advice.
 
-## Project Components
+
+# Project Components
 
 # Predictive Model:
 
@@ -24,8 +25,6 @@ The model utilizes statistical features and other significant measures derived f
 By applying techniques like GridSearchCV for hyperparameter tuning, the model achieves high accuracy in predicting malignancy.
 
 It uses Logistic Regression and SVC models to ensure robust performance across different datasets.
-
-
 
 # Integration:
 
