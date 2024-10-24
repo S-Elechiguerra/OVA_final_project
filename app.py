@@ -2,23 +2,19 @@ import streamlit as st
 import pickle
 from backend import load_data, load_model
  
-def main():
-
-# Function to calculate mean, se, and worst
-def classify_features(inputs):
-    classified_inputs = {}
-    for key, value in inputs.items():
-        classified_inputs[f'{key}_mean'] = value
-        classified_inputs[f'{key}_se'] = value * 0.1  # Simulated logic for SE
-        classified_inputs[f'{key}_worst'] = value * 1.5  # Simulated logic for worst
-    return classified_inputs
-
+ def main():
+    # Function to calculate mean, se, and worst
+    def classify_features(inputs):
+        classified_inputs = {}
+        for key, value in inputs.items():
+            classified_inputs[f'{key}_mean'] = value
+            classified_inputs[f'{key}_se'] = value * 0.1  # Simulated logic for SE
+            classified_inputs[f'{key}_worst'] = value * 1.5  # Simulated logic for worst
+        return classified_input
 with open('logistic_regression_model.pkl', 'rb') as file:
     model = pickle.load(file)
-
 # Streamlit App
 st.title('OVA Breast Cancer Predictor App')
-
 # User Inputs
 st.sidebar.header('Patient Data')
 radius = st.sidebar.number_input('Radius', min_value=0.0, max_value=50.0, value=14.5)
@@ -31,7 +27,6 @@ concavity = st.sidebar.number_input('Concavity', min_value=0.0, max_value=1.0, v
 concave_points = st.sidebar.number_input('Concave Points', min_value=0.0, max_value=1.0, value=0.15)
 symmetry = st.sidebar.number_input('Symmetry', min_value=0.0, max_value=1.0, value=0.2)
 fractal_dimension = st.sidebar.number_input('Fractal Dimension', min_value=0.0, max_value=1.0, value=0.08)
-
 # Collect user inputs
 user_inputs = {
     'radius': radius,
@@ -45,10 +40,8 @@ user_inputs = {
     'symmetry': symmetry,
     'fractal_dimension': fractal_dimension
 }
-
 # Classify inputs internally
 classified_inputs = classify_features(user_inputs)
-
 # Ensure the order of features matches what the model expects
 feature_columns = [
     'radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean',
@@ -58,21 +51,17 @@ feature_columns = [
     'radius_worst', 'texture_worst', 'perimeter_worst', 'area_worst', 'smoothness_worst',
     'compactness_worst', 'concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst'
 ]
-
 features = [classified_inputs[feature] for feature in feature_columns]
-
 # Define the prediction function
 def predict(model, features):
     prediction = model.predict([features])
     return prediction[0]
-
 # Make a prediction
 prediction = predict(model, features)
 if prediction == 1:
     st.write("Predicted: Malign - Cancerous")
 else:
     st.write("Predicted: Benign - Non Cancerous")
-
 # Health recommendations based on prediction
 if prediction == 1:
     st.write("Here are some additional recommendations for your patients:")
@@ -83,6 +72,5 @@ else:
     st.write("Here are some health tips for general wellness:")
     st.write("- **Smoking & Tobacco:** Tobacco use is accountable for at least 30% of all cancer deaths, and smoking causes nearly 90% of all lung cancers. People who live with smokers are more likely to develop lung cancer and even limited exposure to secondhand smoke can raise your heart disease risk.")
     st.write("- **Stay Active:** Our body runs on food. Foods affect how we feel, how it operates and the risk for diseases like cancer. Reduce intake of red and processed meats by choosing fish, seafood or poultry. Increase the amount of fruits and vegetables you eat. Consuming alcohol in any quantity has been shown to increase the risk of cancers. Choose whole grains or other whole food carbohydrates rather than processed carbohydrates.")
-    st.write("- **Regular Check-ups:** Preventive healthcare is important, be an active advocate of regular screening tests. If your patient is taking, or have been told to take, hormone replacement therapy or oral contraceptives (birth control pills), explain the risks. Here are some of the most important recommendations you can give to your patients: Maintaining a healthy body weight lowers the risk for more than 10 types of cancer. Being physically active can help maintain a healthy weight. The best way to protect from skin cancer is to limit exposure to UV rays from the sun and tanning beds. The HPV vaccine is the best protection against HPV and related cancers. All boys and girls between the ages of 11 and 12 should complete the HPV vaccine series. Hepatitis B and C can cause long-term illness that leads to liver damage and liver cancer. Hepatitis C also can cause non-Hodgkin lymphoma.")
-    
-    if __name__ == '__main__':
+    st.write("- **Regular Check-ups:** Preventive healthcare is important, be an active advocate of regular screening tests. If your patient is taking, or have been told to take, hormone replacement therapy or oral contraceptives (birth control pills), explain the risks. Here are some of the most important recommendations you can give to your patients: Maintaining a healthy body weight lowers the risk for more than 10 types of cancer. Being physically active can help maintain a healthy weight. The best way to protect from skin cancer is to limit exposure to UV rays from the sun and tanning beds. The HPV vaccine is the best protection against HPV and related cancers. All boys and girls between the ages of 11 and 12 should complete the HPV vaccine series. Hepatitis B and C can cause long-term illness that leads to liver damage and liver cancer. Hepatitis C also can cause non-Hodgkin lymphoma.")  
+if __name__ == '__main__':
