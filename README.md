@@ -3,12 +3,12 @@
 
 
 
-##Breast Cancer Predictor Model and Chatbot for Oncologists: OVA
+## Breast Cancer Predictor Model and Chatbot for Oncologists: OVA
 
-#Overview
+# Overview
 This project combines machine learning and artificial intelligence to assist oncologists in predicting breast cancer and providing personalized patient recommendations. The core component is a predictive model that analyzes patient data to forecast the likelihood of breast cancer. Complementing this model is a chatbot, which facilitates smooth communication between oncologists and their patients, offering guidance and tailored advice.
 
-#Project Components
+# Project Components
 Predictive Model:
 
 The model utilizes statistical features such as radius_mean, texture_mean, and other significant measures derived from medical data.
@@ -25,13 +25,13 @@ It provides real-time predictions and detailed health advice, making it easier f
 
 Patients receive tailored recommendations based on their prediction outcomes, enhancing their understanding and management of their health.
 
-#Streamlit Deployment:
+# Streamlit Deployment:
 
 Streamlit ensures the application is easily deployable and consistent across various environments.
 
 This guarantees that the predictive model and chatbot run smoothly regardless of the underlying infrastructure.
 
-#About Breast Cancer:
+# About Breast Cancer:
 Prevalence: Breast cancer is one of the most common cancers among women worldwide, with an estimated 2.3 million new cases diagnosed in 2020.
 
 Survival Rate: Early detection significantly improves survival rates. The 5-year relative survival rate for localized breast cancer is 99%.
@@ -50,3 +50,6 @@ Cross-Validation: Techniques like cross-validation ensure that the model general
 Health Recommendations: Based on the prediction, the system provides actionable health advice, covering topics like treatment options, lifestyle changes, and preventive measures.
 
 This project not only aims to improve diagnostic accuracy but also seeks to enhance patient care through intelligent automation and personalized health communication. By integrating cutting-edge AI with practical healthcare applications, it represents a significant step forward in the fight against breast cancer.
+
+![my_plot_presentation](https://github.com/user-attachments/assets/5245264e-5cf9-4822-a7a5-df7d87d3d4b0)
+
