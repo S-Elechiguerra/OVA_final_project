@@ -1,7 +1,7 @@
 
 ![OVA](https://github.com/user-attachments/assets/fa50cc72-3867-438b-9844-718ec5900789)
 
-## Breast Cancer Predictor Model and Virtual Assistant for Oncologists: OVA
+# Breast Cancer Predictor Model and Virtual Assistant for Oncologists: OVA
 Prevalence: Breast cancer is one of the most common cancers among women worldwide, with an estimated 2.3 million new cases diagnosed in 2020.
 
 Survival Rate: Early detection significantly improves survival rates. The 5-year relative survival rate for localized breast cancer is 99%.
@@ -42,7 +42,7 @@ Patients receive tailored recommendations based on their prediction outcomes, en
 It ensures the application is easily deployable and consistent across various environments.
 This guarantees that the Virtual Assistant runs smoothly regardless of the underlying infrastructure.
 
-## Technical Highlights:
+# Technical Highlights:
 
 Feature Engineering: The model uses carefully selected features that have significant predictive power for breast cancer.
 Cross-Validation: Techniques like cross-validation ensure that the model generalizes well to unseen data, enhancing its reliability.
