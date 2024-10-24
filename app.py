@@ -1,9 +1,6 @@
 import streamlit as st
 import pickle
 from backend import load_data, load_model
- 
- def main():
-    # Function to calculate mean, se, and worst
     def classify_features(inputs):
         classified_inputs = {}
         for key, value in inputs.items():
