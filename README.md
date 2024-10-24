@@ -26,6 +26,12 @@ By applying techniques like GridSearchCV for hyperparameter tuning, the model ac
 
 It uses Logistic Regression and SVC models to ensure robust performance across different datasets.
 
+
+![my_plot_presentation](https://github.com/user-attachments/assets/06be56cb-c513-499b-9a0a-a438897df03d)
+
+
+
+
 # Integration:
 
 Our Virtual Assistant and Predictor Model provide real-time predictions and detailed health advice, making it easier for oncologists to communicate critical information to patients.
