@@ -44,8 +44,8 @@ This guarantees that the Virtual Assistant runs smoothly regardless of the under
 
 ## Technical Highlights:
 
-# Feature Engineering: The model uses carefully selected features that have significant predictive power for breast cancer.
-# Cross-Validation: Techniques like cross-validation ensure that the model generalizes well to unseen data, enhancing its reliability.
-# Health Recommendations: Based on the prediction, the system provides actionable health advice, covering topics like treatment options, lifestyle changes, and preventive measures.
+Feature Engineering: The model uses carefully selected features that have significant predictive power for breast cancer.
+Cross-Validation: Techniques like cross-validation ensure that the model generalizes well to unseen data, enhancing its reliability.
+Health Recommendations: Based on the prediction, the system provides actionable health advice, covering topics like treatment options, lifestyle changes, and preventive measures.
 
 This project not only aims to improve diagnostic accuracy but also seeks to enhance patient care through intelligent automation and personalized health communication. By integrating cutting-edge AI with practical healthcare applications, it represents a significant step forward in the fight against breast cancer.
