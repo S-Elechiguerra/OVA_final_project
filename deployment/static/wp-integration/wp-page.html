@@ -1,0 +1,53 @@
+<h2>Breast Cancer Predictor</h2>
+<p>Enter the patient data:</p>
+
+<form id="predict-form">
+  <label for="radius">Radius:</label>
+  <input type="number" id="radius" name="radius" step="0.01" value="14.5"><br>
+
+  <!-- Other fields for input go here... -->
+
+  <input type="button" id="predict-btn" value="Predict">
+</form>
+
+<div id="prediction-result"></div>
+
+<script>
+document.getElementById('predict-btn').addEventListener('click', function() {
+    // Collect form data
+    const formData = {
+        radius: parseFloat(document.getElementById('radius').value),
+        texture: parseFloat(document.getElementById('texture').value),
+        perimeter: parseFloat(document.getElementById('perimeter').value),
+        area: parseFloat(document.getElementById('area').value),
+        smoothness: parseFloat(document.getElementById('smoothness').value),
+        compactness: parseFloat(document.getElementById('compactness').value),
+        concavity: parseFloat(document.getElementById('concavity').value),
+        concave_points: parseFloat(document.getElementById('concave_points').value),
+        symmetry: parseFloat(document.getElementById('symmetry').value),
+        fractal_dimension: parseFloat(document.getElementById('fractal_dimension').value)
+    };
+
+    // Send POST request to Flask API
+    fetch('https://your-flask-app.com/predict', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        const resultDiv = document.getElementById('prediction-result');
+        resultDiv.innerHTML = `<h3>Prediction: ${data.prediction}</h3><h4>Recommendations:</h4><ul>`;
+        data.recommendations.forEach(rec => {
+            resultDiv.innerHTML += `<li>${rec}</li>`;
+        });
+        resultDiv.innerHTML += `</ul>`;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('prediction-result').innerHTML = 'An error occurred. Please try again.';
+    });
+});
+</script>
