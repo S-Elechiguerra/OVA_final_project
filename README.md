@@ -70,8 +70,7 @@ Patients receive tailored recommendations based on their prediction outcomes, en
 
 # Promptly Virtual Assistant:
 
-It ensures the application is easily deployable and consistent across various environments.
-This guarantees that the Virtual Assistant runs smoothly regardless of the underlying infrastructure.
+By using this technology, the application remains effortlessly deployable and maintains consistency across diverse environments. This seamless adaptability ensures that the Virtual Assistant functions efficiently and reliably, independent of the underlying infrastructure. Additionally, it is easy to program and update, facilitating seamless integration of new data and advancements. The programming process is intuitive, allowing for swift implementation of enhancements and modifications to meet evolving needs. Updating data is straightforward, ensuring the assistant remains accurate and relevant. Whether deployed on local servers or cloud platforms, the Virtual Assistant's robust architecture stands ready to deliver uninterrupted service and support, guaranteeing optimal performance and user experience.
 
 # Technical Highlights:
 
@@ -82,10 +81,12 @@ Health Recommendations: Based on the prediction, the system provides actionable 
 This project not only aims to improve diagnostic accuracy but also seeks to enhance patient care through intelligent automation and personalized health communication. By integrating cutting-edge AI with practical healthcare applications, it represents a significant step forward in the fight against breast cancer.
 
 # Links
+
 ## Presentation
 ![Oncologist Virtual Assistant](https://github.com/user-attachments/assets/f75af8f7-8740-4d55-9224-4ce8c433089b)
 
 https://www.canva.com/design/DAGUa7EntuQ/x3sfyCBmkENSouaHTyMviA/view?utm_content=DAGUa7EntuQ&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 ![Captura de pantalla 2024-10-25 094727](https://github.com/user-attachments/assets/f14f6408-303f-47cc-b761-43668fccf3c0)
 
 ## website
