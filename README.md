@@ -50,5 +50,8 @@ Health Recommendations: Based on the prediction, the system provides actionable 
 
 This project not only aims to improve diagnostic accuracy but also seeks to enhance patient care through intelligent automation and personalized health communication. By integrating cutting-edge AI with practical healthcare applications, it represents a significant step forward in the fight against breast cancer.
 
-## Presentation
+## Links
+Presentation
 https://www.canva.com/design/DAGUa7EntuQ/x3sfyCBmkENSouaHTyMviA/view?utm_content=DAGUa7EntuQ&utm_campaign=designshare&utm_medium=link&utm_source=editor
+website
+https://ovassist.wordpress.com/
