@@ -18,10 +18,15 @@ This project combines machine learning and artificial intelligence to assist onc
 
 ## Project Components
 # Data Set:
-Dataset Information
-Additional Information
+Dataset Information:
+The Wisconsin Breast Cancer Data was donated on July the 14th 1992 by the University of Wisconsin-Madison. 
+The authors of the data set are Prof. Olvi L. Mangasarian of the Computer Sciences Department and Dr. William H. Wolberg of the departments of Surgery and Human Oncology.
+This work grew out of the desire by Dr. Wolberg to accurately diagnose breast masses based solely on a Fine Needle Aspiration (FNA). He identified nine visually assessed characteristics of an FNA sample which he considered relevant to diagnosis. In collaboration with Prof. Mangasarian and two of his graduate students, Rudy Setiono and Kristin Bennett, a classifier was constructed using the multisurface method (MSM) of pattern separation on these nine features that successfully diagnosed 97% of new cases.
 
 Samples arrive periodically as Dr. Wolberg reports his clinical cases. The database therefore reflects this chronological grouping of the data. This grouping information appears immediately below, having been removed from the data itself:
+
+![1](https://github.com/user-attachments/assets/aecaf8fb-ac6b-4eab-a62e-a105fc455bde)
+![2](https://github.com/user-attachments/assets/8c48b851-e9a8-47d5-8fef-c47c0124453d)
 
 Group 1: 367 instances (January 1989)
 Group 2:  70 instances (October 1989)
@@ -49,11 +54,6 @@ Note that the results summarized above in Past Usage refer to a dataset of size 
 # Predictive Model:
 
 The model employs statistical features and other significant measures derived from medical data and screening.
-![1](https://github.com/user-attachments/assets/b3bc4927-6ed7-4daa-a7a5-2d2baf9e5493)
-
-![2](https://github.com/user-attachments/assets/1687570f-d45d-4b7f-b992-ca7ef8f68862)
-
-
 
 By applying techniques like GridSearchCV for hyperparameter tuning, the model achieves high accuracy in predicting tumour malignancy.
 
@@ -83,7 +83,10 @@ This project not only aims to improve diagnostic accuracy but also seeks to enha
 
 # Links
 ## Presentation
+![Oncologist Virtual Assistant](https://github.com/user-attachments/assets/f75af8f7-8740-4d55-9224-4ce8c433089b)
+
 https://www.canva.com/design/DAGUa7EntuQ/x3sfyCBmkENSouaHTyMviA/view?utm_content=DAGUa7EntuQ&utm_campaign=designshare&utm_medium=link&utm_source=editor
+![Captura de pantalla 2024-10-25 094727](https://github.com/user-attachments/assets/f14f6408-303f-47cc-b761-43668fccf3c0)
 
 ## website
 https://ovassist.wordpress.com/
