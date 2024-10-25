@@ -1,53 +1,61 @@
-<h2>Breast Cancer Predictor</h2>
-<p>Enter the patient data:</p>
-
-<form id="predict-form">
-  <label for="radius">Radius:</label>
-  <input type="number" id="radius" name="radius" step="0.01" value="14.5"><br>
-
-  <!-- Other fields for input go here... -->
-
-  <input type="button" id="predict-btn" value="Predict">
-</form>
-
-<div id="prediction-result"></div>
-
-<script>
-document.getElementById('predict-btn').addEventListener('click', function() {
-    // Collect form data
-    const formData = {
-        radius: parseFloat(document.getElementById('radius').value),
-        texture: parseFloat(document.getElementById('texture').value),
-        perimeter: parseFloat(document.getElementById('perimeter').value),
-        area: parseFloat(document.getElementById('area').value),
-        smoothness: parseFloat(document.getElementById('smoothness').value),
-        compactness: parseFloat(document.getElementById('compactness').value),
-        concavity: parseFloat(document.getElementById('concavity').value),
-        concave_points: parseFloat(document.getElementById('concave_points').value),
-        symmetry: parseFloat(document.getElementById('symmetry').value),
-        fractal_dimension: parseFloat(document.getElementById('fractal_dimension').value)
-    };
-
-    // Send POST request to Flask API
-    fetch('https://your-flask-app.com/predict', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        const resultDiv = document.getElementById('prediction-result');
-        resultDiv.innerHTML = `<h3>Prediction: ${data.prediction}</h3><h4>Recommendations:</h4><ul>`;
-        data.recommendations.forEach(rec => {
-            resultDiv.innerHTML += `<li>${rec}</li>`;
-        });
-        resultDiv.innerHTML += `</ul>`;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('prediction-result').innerHTML = 'An error occurred. Please try again.';
-    });
-});
-</script>
+<!-- wp:cover {"dimRatio":90,"overlayColor":"background","isUserOverlayColor":true,"minHeight":90,"minHeightUnit":"vh","isDark":false,"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-cover is-light" style="padding-top:0;padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-background-background-color has-background-dim-90 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:template-part {"slug":"header-front","theme":"pub/hey","tagName":"header","align":"full"} /-->
+    
+    <!-- wp:heading {"textAlign":"left","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} -->
+    <h1 class="wp-block-heading has-text-align-left has-primary-color has-text-color has-link-color" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)">Oncologist Virtual Assistant</h1>
+    <!-- /wp:heading -->
+    
+    <!-- wp:query {"queryId":0,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-query"><!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Hello,&nbsp;Doctor!&nbsp;Ready&nbsp;for&nbsp;another&nbsp;day&nbsp;of&nbsp;making&nbsp;an&nbsp;impact?&nbsp;Let's&nbsp;do&nbsp;this!</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons"><!-- wp:button {"textAlign":"center"} -->
+    <div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="https://trypromptly.com/app/2230ffa7-b6f9-4931-a244-79d8492d3f20">How&nbsp;can&nbsp;I&nbsp;assist?</a></div>
+    <!-- /wp:button --></div>
+    <!-- /wp:buttons --></div>
+    <!-- /wp:query --></div>
+    <!-- /wp:group --></div></div>
+    <!-- /wp:cover -->
+    
+    <!-- wp:group {"metadata":{"categories":["header"],"patternName":"hey/header-front","name":"Header Front"},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:heading {"textAlign":"left","lock":{"move":false,"remove":false}} -->
+    <h2 class="wp-block-heading has-text-align-left"><strong>Meet OVA</strong></h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"lock":{"move":true,"remove":true}} -->
+    <p>Our&nbsp;cutting-edge&nbsp; AI&nbsp; assistant&nbsp; leverages &nbsp;advanced&nbsp; machine&nbsp; learning&nbsp; algorithms&nbsp; to&nbsp; analyze &nbsp;metrics, &nbsp;offering&nbsp; precise predictions &nbsp;and&nbsp; personalized&nbsp; health&nbsp; advice. By&nbsp;integrating&nbsp;this&nbsp;technology,&nbsp;we&nbsp;aim&nbsp;to&nbsp;empower&nbsp;oncologists&nbsp;with&nbsp;reliable&nbsp;tools&nbsp;to&nbsp;make&nbsp;informed&nbsp;decisions,&nbsp;ultimately&nbsp;bridging&nbsp;the&nbsp;gap&nbsp;between&nbsp;innovative&nbsp;technology&nbsp; and&nbsp;compassionate&nbsp;patient&nbsp;care.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"lock":{"move":true,"remove":true}} -->
+    <p>Cancer,&nbsp;a&nbsp;pervasive&nbsp;health&nbsp;challenge&nbsp;affecting&nbsp;millions&nbsp;worldwide,&nbsp;underscores&nbsp;the&nbsp;critical&nbsp;importance&nbsp;of&nbsp;early&nbsp;diagnosis&nbsp;and&nbsp;comprehensive&nbsp;education.&nbsp;</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"lock":{"move":true,"remove":true}} -->
+    <p>Timely&nbsp;detection&nbsp;not&nbsp;only&nbsp;enhances&nbsp;treatment&nbsp;efficacy&nbsp;but&nbsp;also&nbsp;significantly&nbsp;improves&nbsp;patient&nbsp;outcomes.&nbsp;</p>
+    <!-- /wp:paragraph -->
