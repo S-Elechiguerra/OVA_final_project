@@ -20,16 +20,19 @@ This project combines machine learning and artificial intelligence to assist onc
 
 # Predictive Model:
 
-The model utilizes statistical features and other significant measures derived from medical data.
+The model employs statistical features and other significant measures derived from medical data and screening.
+![1](https://github.com/user-attachments/assets/b3bc4927-6ed7-4daa-a7a5-2d2baf9e5493)
 
-By applying techniques like GridSearchCV for hyperparameter tuning, the model achieves high accuracy in predicting malignancy.
+![2](https://github.com/user-attachments/assets/1687570f-d45d-4b7f-b992-ca7ef8f68862)
+
+
+
+By applying techniques like GridSearchCV for hyperparameter tuning, the model achieves high accuracy in predicting tumour malignancy.
 
 It uses Logistic Regression and SVC models to ensure robust performance across different datasets.
 
 
 ![my_plot_presentation](https://github.com/user-attachments/assets/06be56cb-c513-499b-9a0a-a438897df03d)
-
-
 
 
 # Integration:
@@ -45,7 +48,7 @@ This guarantees that the Virtual Assistant runs smoothly regardless of the under
 # Technical Highlights:
 
 Feature Engineering: The model uses carefully selected features that have significant predictive power for breast cancer.
-Cross-Validation: Techniques like cross-validation ensure that the model generalizes well to unseen data, enhancing its reliability.
+Cross-Validation: This technique ensures that the model generalizes well to unseen data, enhancing its reliability.
 Health Recommendations: Based on the prediction, the system provides actionable health advice, covering topics like treatment options, lifestyle changes, and preventive measures.
 
 This project not only aims to improve diagnostic accuracy but also seeks to enhance patient care through intelligent automation and personalized health communication. By integrating cutting-edge AI with practical healthcare applications, it represents a significant step forward in the fight against breast cancer.
