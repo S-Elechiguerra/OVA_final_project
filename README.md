@@ -16,8 +16,8 @@ Innovation: Advances in technology, such as AI and machine learning, are revolut
 This project combines machine learning and artificial intelligence to assist oncologists in predicting breast cancer and providing personalized patient recommendations. The core component is a predictive model that analyzes patient data to forecast the likelihood of breast cancer. Complementing this model is a chatbot, which facilitates smooth communication between oncologists and their patients, offering guidance and tailored advice.
 
 
-## Project Components
-# Data Set:
+# Project Components
+## Data Set:
 Dataset Information:
 The Wisconsin Breast Cancer Data was donated on July the 14th 1992 by the University of Wisconsin-Madison. 
 The authors of the data set are Prof. Olvi L. Mangasarian of the Computer Sciences Department and Dr. William H. Wolberg of the departments of Surgery and Human Oncology.
