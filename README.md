@@ -16,7 +16,35 @@ Innovation: Advances in technology, such as AI and machine learning, are revolut
 This project combines machine learning and artificial intelligence to assist oncologists in predicting breast cancer and providing personalized patient recommendations. The core component is a predictive model that analyzes patient data to forecast the likelihood of breast cancer. Complementing this model is a chatbot, which facilitates smooth communication between oncologists and their patients, offering guidance and tailored advice.
 
 
-# Project Components
+## Project Components
+# Data Set:
+Dataset Information
+Additional Information
+
+Samples arrive periodically as Dr. Wolberg reports his clinical cases. The database therefore reflects this chronological grouping of the data. This grouping information appears immediately below, having been removed from the data itself:
+
+Group 1: 367 instances (January 1989)
+Group 2:  70 instances (October 1989)
+Group 3:  31 instances (February 1990)
+Group 4:  17 instances (April 1990)
+Group 5:  48 instances (August 1990)
+Group 6:  49 instances (Updated January 1991)
+Group 7:  31 instances (June 1991)
+Group 8:  86 instances (November 1991)
+-----------------------------------------
+Total:   699 points (as of the donated datbase on 15 July 1992)
+
+Note that the results summarized above in Past Usage refer to a dataset of size 369, while Group 1 has only 367 instances.  This is because it originally contained 369 instances; 2 were removed.  The following statements summarizes changes to the original Group 1's set of data:
+
+#####  Group 1 : 367 points: 200B 167M (January 1989)
+
+#####  Revised Jan 10, 1991: Replaced zero bare nuclei in 1080185 & 1187805
+
+#####  Revised Nov 22,1991: Removed 765878,4,5,9,7,10,10,10,3,8,1 no record
+#####                  : Removed 484201,2,7,8,8,4,3,10,3,4,1 zero epithelial
+#####                  : Changed 0 to 1 in field 6 of sample 1219406
+#####                  : Changed 0 to 1 in field 8 of following sample:
+#####                  : 1182404,2,3,1,1,1,2,0,1,1,1
 
 # Predictive Model:
 
